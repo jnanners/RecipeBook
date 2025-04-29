@@ -1,0 +1,22 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "title": "Chili Honey Garlic Salmon Bowls",
+            "cookTime": 45,
+            "link": "https://www.halfbakedharvest.com/honey-garlic-salmon-bowls/"
+        },
+        {
+            "id": 2,
+            "title": "Oven Roasted Potatoes w/ Dijon Dressing",
+            "cookTime": 35,
+            "link": "https://www.loveandlemons.com/roasted-potatoes/#wprm-recipe-container-42248"
+        }, 
+        {
+            "id": 3,
+            "title": "Whipped Feta w/ Spicy Honey",
+            "cookTime": 15,
+            "link":"https://www.servingdumplings.com/recipe/whipped-feta-dip-with-spicy-honey/"
+        }
+    ]
+}
