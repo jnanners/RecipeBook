@@ -47,6 +47,10 @@ const EditRecipePage = ({updateRecipeSubmit}) => {
         return navigate("/")
     }
 
+    const cancelButton = () => {
+        return navigate("/")
+    }
+
     return(
         <section className="bg-amber-500">
             <div className="container m-auto max-w-2xl py-24">
@@ -89,8 +93,11 @@ const EditRecipePage = ({updateRecipeSubmit}) => {
                                 onChange={(e) => setLink(e.target.value)}
                             />
                         </div>
-                        <div>
-                            <button type="submit">Update Recipe</button>
+                        <div className="flex">
+                            <div className="ml-auto">
+                                <button type="submit" className="text-black hover:bg-gray-900 hover:text-white rounded-md px-2 py-1 font-bold ml-2">Add Recipe</button>
+                                <button onClick={cancelButton} className="text-black hover:bg-gray-900 hover:text-white rounded-md px-2 py-1 font-bold ml-2">Cancel</button>
+                            </div>
                         </div>
                     </form>
                 </div>

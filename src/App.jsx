@@ -41,10 +41,21 @@ const App = () => {
     return
   }
 
+  const deleteRecipe = async (id) => {
+    try{
+      const res = await fetch(`/api/recipes/${id}`, {
+        method: "DELETE",
+      })
+    } catch(error){
+      console.log(error)
+    };
+    return;
+  }
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<MainLayout />}>
-        <Route index element={<HomePage />} />
+        <Route index element={<HomePage deleteRecipe={deleteRecipe}/>} />
         <Route path="/add-recipe" element={<AddRecipePage addRecipeSubmit={addRecipe}/>} />
         <Route path="/edit-recipe/:id" element={<EditRecipePage updateRecipeSubmit={updateRecipe}/>} />
       </Route>

@@ -1,9 +1,9 @@
 import Recipes from "../components/Recipes"
 
-const HomePage = () => {
+const HomePage = ({deleteRecipe}) => {
     return (
         <>
-            <Recipes />
+            <Recipes deleteRecipe={deleteRecipe}/>
         </>
     )
 }

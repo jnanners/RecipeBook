@@ -1,12 +1,6 @@
 {
   "recipes": [
     {
-      "id": "1",
-      "title": "Chili Honey Garlic Salmon Bowls",
-      "cookTime": "45",
-      "link": "https://www.halfbakedharvest.com/honey-garlic-salmon-bowls/"
-    },
-    {
       "id": "2",
       "title": "Oven Roasted Potatoes w/ Dijon Dressing",
       "cookTime": 35,
